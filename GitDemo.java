@@ -1,11 +1,14 @@
 /*****
- Victor Ruiz 
+
+ Victor Ruiz
+
  ******/
 
 
 public class GitDemo{
     
     private double previousNumber;
+    private double reverseNum; 
     
     public GitDemo(){
         previousNumber = 1;
@@ -15,10 +18,10 @@ public class GitDemo{
      * This function should add 'num' to 'previousNumber' and return the sum.
     *****/
     public double addNumber(double num) {
-        
-        double add = previousNumber + num; 
-        System.out.print(add);
-        return 0;
+
+        System.out.print("Add num to previousNumber");
+        return num+previousNumber;
+
     }
     
     /*****
@@ -41,6 +44,7 @@ public class GitDemo{
      * i.e. if num = 1234
      *  the function will return 4321 
      *****/
+
     public double reverseNumber(int num){
        
         int reversed = 0; 
@@ -48,6 +52,7 @@ public class GitDemo{
             int temp = num % 10; 
             reversed = reversed *10 + temp; 
             num /=10; 
+
         }
          
         return reversed; 
